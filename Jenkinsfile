@@ -2,9 +2,7 @@ pipeline {
     agent any 
 
 
-    environment {
-        YOUR_SECRET_KEY = 'yourActualSecretKeyHere'
-    }
+    
 
     parameters {
         string(name: 'ciBuildVersion', defaultValue: '1.0.0', description: 'Build version')
