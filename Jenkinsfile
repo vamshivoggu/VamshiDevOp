@@ -2,20 +2,21 @@ pipeline {
     agent any 
 
 
-    
+ 
 
-        stages {
+
+    stages {
         stage('Dependencies') {
             steps {
                 echo 'Fetching dependencies...'
-               
+              
             }
         }
 
         stage('Test') {
             steps {
                 echo 'Running tests...'
-               
+             
             }
         }
 
@@ -33,14 +34,14 @@ pipeline {
         stage('Package') {
             steps {
                 echo 'Packaging the binary...'
-              
+                
             }
         }
 
         stage('Cleanup') {
             steps {
                 echo 'Cleaning up...'
-             
+              
             }
         }
     }
@@ -57,4 +58,3 @@ pipeline {
         }
     }
 }
-
